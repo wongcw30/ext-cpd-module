@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form i18nBaseUri="page-types.log_cpd_activity_page:">
+	<tab id="form_settings">
+		<fieldset id="cpd_activity">
+			<field binding="log_cpd_activity_page.success_message" />
+			<field binding="log_cpd_activity_page.failed_message"  />
+			<field binding="log_cpd_activity_page.not_found_message"  />
+			<field binding="log_cpd_activity_page.maximum_upload"     control="spinner"        />
+			<field binding="log_cpd_activity_page.maximum_size"       control="spinner"        />
+		</fieldset>
+	</tab>
+</form>

@@ -1,0 +1,7 @@
+{
+	  "id"        : "cpd-module"
+	, "title"     : "CPD Module"
+	, "author"    : "Chun Weng Wong"
+	, "version"   : "0.0.1"
+	, "dependsOn" : [ "preside-ext-pixl8-crm-base", "preside-ext-ems", "preside-ext-groups" ]
+}

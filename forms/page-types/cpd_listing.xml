@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form i18nBaseUri="page-types.cpd_listing:">
+	<tab id="main">
+		<fieldset id="main">
+			<field binding="cpd_listing.result_per_page"         />
+			<field binding="cpd_listing.no_activity_message"     />
+		</fieldset>
+	</tab>
+	<tab id="reports" sortorder="10">
+		<fieldset id="detail">
+			<field binding="cpd_listing.report_detail_title"         />
+			<field binding="cpd_listing.report_detail_description"   />
+		</fieldset>
+	</tab>
+</form>

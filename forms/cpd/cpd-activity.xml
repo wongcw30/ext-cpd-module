@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form i18nBaseUri="preside-objects.cpd_activity:">
+	<tab id="main">
+		<fieldset id="main">
+			<field name="label" control="textinput" required="true" maxlength="200" isFirst="true" isLast="true" largeCols="12" medCols="12" />
+			<field name="activity_type"       control="objectSelect"    required="true" object="activity_type"       orderBy="sort_order, label" isFirst="true" isLast="true" largeCols="6" medCols="6" />
+			<field name="activity_category"       control="objectSelect"    required="true" object="activity_category"       orderBy="sort_order, label" isFirst="true" isLast="true" largeCols="6" medCols="6" />
+			<field name="credit_logged"       control="textinput" maxlength="3" required="true" isFirst="true" isLast="true" largeCols="6" medCols="6" >
+				<rule validator="number" />
+			</field>
+			<field name="completed_date"           control="datePicker"    required="true" isFirst="true" isLast="true" >
+				<rule validator="laterThanOrSameAsField" message="preside-objects.cpd_activity:validation.end_date.laterThanField" >
+					<param name="field" value="start_date" />
+				</rule>
+			</field>
+			<field name="description"  control="textArea" isFirst="true" isLast="true" largeCols="12" medCols="12" maxlength="10000" fixedrow="5" displayLimitCounter="true"                 />
+			<field name="supporting_documents"     control="multiFileUpload" isFirst="true" isLast="true" largeCols="12" medCols="12" accept=".doc,.docx,.pdf,image/*" />
+			<field name="reflective_learning_note"  control="textArea" isFirst="true" isLast="true" largeCols="12" medCols="12" maxlength="10000" fixedrow="5" displayLimitCounter="true" required="true"                />
+		</fieldset>
+	</tab>
+</form>
